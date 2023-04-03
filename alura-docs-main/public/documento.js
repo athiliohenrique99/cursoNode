@@ -7,7 +7,7 @@ const nomeDocumento = parametros.get("nome");
 const textoEditor = document.getElementById("editor-texto");
 const tituloDocumento = document.getElementById("titulo-documento");
 
-tituloDocumento.textContent = nomeDocumento || "nomeDocumento";
+tituloDocumento.textContent = nomeDocumento || "Documento sem titulo";
 
 selecionarDocumento(nomeDocumento);
 

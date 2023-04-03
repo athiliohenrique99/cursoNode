@@ -2,7 +2,8 @@ import Sequelize from "Sequelize";
 
 const db = new Sequelize('node_alura', 'root', '', {
     host: "localhost",
-    dialect: "mysql"
+    dialect: "mysql",
+    timeStamps: false
 });
 
 db.authenticate().then(function(){

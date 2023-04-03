@@ -5,6 +5,10 @@ function obterDocumentos(){
     return documentos;
 }
 
+function adicionarDocumento(nome){
+    const resultado = doc.create({nome});
+}
+
 function encontrarDocumento(nome) {
     const documento = doc.findAll({where: {'nome': nome}})
 
@@ -20,4 +24,4 @@ function atualizaDocumento(nome, texto){
     return atualizacao;
 }
 
-export { encontrarDocumento, atualizaDocumento, obterDocumentos }
+export { encontrarDocumento, atualizaDocumento, obterDocumentos, adicionarDocumento }
