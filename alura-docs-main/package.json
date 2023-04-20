@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon src/socket-back.js"
+    "dev": "nodemon src/socket-back.js",
+    "bancoTeste": "nodemon config/dbConnect.js"
   },
   "keywords": [],
   "author": "",
@@ -14,6 +15,7 @@
   "dependencies": {
     "express": "^4.18.2",
     "nodemon": "^2.0.22",
+    "sequelize": "^6.31.0",
     "socket.io": "^4.6.1"
   }
 }
